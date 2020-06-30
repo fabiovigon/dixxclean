@@ -9,3 +9,4 @@ No desenvolvimento do site foi utilizado:
 - FonteAwesome
 - Jquery Ripples (Water Effect)
 
+Link para o site: https://app.netlify.com/sites/elastic-villani-c39ed4/settings/deploys
