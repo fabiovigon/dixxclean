@@ -8,4 +8,5 @@ No desenvolvimento do site foi utilizado:
 - JQuery
 - FonteAwesome
 - Jquery Ripples (Water Effect)
+- SEO
 
