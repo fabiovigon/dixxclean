@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dixx Clean</title>
-    <link rel="stylesheet" type="text/css" href="/_css/menu.css">
-    <link rel="stylesheet" type="text/css" href="/_css/body.css">
+    <link rel="stylesheet" type="text/css" href="/_css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script src="/_js/main.js"></script>
+    <script src="_js/jquery.ripples-min.js"></script>
 
  
 </head>
@@ -19,7 +18,7 @@
 
         <!-- inicio menu  -->
         <div class="logo">
-            <img src="../_js/imagem/LogoDixx.png"alt="" srcset="">
+            <img src="../_css/imagem/LogoDixx.png"alt="" srcset="">
         </div>
 
             <nav>
@@ -27,7 +26,6 @@
                     <li><a href="#Home" class="active">Home</a></li>
                     <li><a href="#About">Sobre nós</a></li>
                     <li><a href="#Services">Serviços</a></li>
-                    <li><a href="#Team">Time</a></li>
                     <li><a href="#Contact">Contato</a></li>
                 </ul>
             </nav>
@@ -55,7 +53,7 @@
                     Atendemos indústrias de alimentos e bebidas, hospitais, restaurantes, lavanderias têxteis, segmento automotivo, tratamento de caldeiras e Torres de resfriamento, metal mecânica, etc.
                     
                     Se você tem um problema com limpeza, nós temos a solução!</p>
-                <a href="#">Ver mais</a>
+                <!-- <a href="#">Ver mais</a> -->
             </div>
     </section>
 
@@ -74,59 +72,86 @@
                              <li>• Etc.</li>
                          </ul>      
                      </p>
-                <a href="#">Ver mais</a>
-            </div>
+                     
+                     <div id="">
+                        <!-- <a href="#">Ver mais</a> -->
+                        <!-- <h3>Fotos</h2> -->
+                          
+                        </div>
+                        
+                </div>
+                <br/> <br/>
+                      
     </section>
 
-    <section class="anime">     
-        <div class="content" id="Team">
-            <h2>Time</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet tempus nunc. Vestibulum imperdiet orci elementum, bibendum eros eget, luctus mi. Ut leo lorem, malesuada quis elit finibus, dapibus vestibulum diam. Phasellus maximus, sem at blandit vulputate, nibh neque sodales ipsum, vel accumsan arcu dui ut urna. Cras volutpat condimentum vestibulum. Nam vitae nunc volutpat nibh gravida maximus. Ut euismod imperdiet ligula, eu lacinia neque rhoncus a. Suspendisse potenti. Proin odio mi, bibendum ac tortor sed, porta porta quam. Sed eu lorem quis augue aliquet vestibulum in vitae ex.</p>
-            <a href="#">Ver mais</a>
-        </div>
-    </section>
+
 
     <section class="anime" id="margin400px">    
             <div class="content" id="Contact">
                 <h2>Contato</h2>
                 <p>Entre em contato para agendar uma visita técnica em seu estabelicimento!</p><br>
-                <p>Telefone:(xx)xxxxx-xxxx - Bruno Vieira Gonçalves</p>
-                <p>Telefone:(xx)xxxxx-xxxx - Edmilson da Silva Gonçalves</p>
-                <a href="mailto:dixxclean@hotmail.com" >Enviar E-mail</a>
+                <form   action="https://formspree.io/fabiovigon11@gmail.com" method="POST">
+                  
+                   <div class="formulario">
+                           <input type="text" name="nome" placeholder="Primeiro e Ultimo Nome"  >
+                    </div>
+
+                    <div class="formulario">
+                           <input type="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="formulario">
+                           <input type="text" name="empresa" placeholder="Empresa">
+                    </div>
+
+                    <div class="formulario">
+                            <select name="empresa" id="empresa" >
+                              <option value="" disabled selected hidden>Segmento de Atuação</option>
+                              <option value="cozinha">Cozinha Industrial</option>
+                              <option value="acougue">Frígorifico/Açougue</option>
+                              <option value="hospital">Hospital</option>
+                              <option value="lavanderia">Lavanderia</option>
+                              <option value="oficina">Oficina Mecânica</option>
+                              <option value="restaurante">Restaurante/Lancheria</option>
+                              <option value="supermercado">Supermercado/Minimercado</option>
+                              <option value="revenda">Revenda/Locação de Veículos</option>
+                            </select>
+                    </div>
+
+                    <div class="formulario">
+                        <input type="text" name="telefone" placeholder="Telefone">
+                    </div>
+
+                    <div class="formulario">
+                        <input type="text" name="cidade" placeholder="Cidade">
+                    </div>
+          
+                       
+                    <div class="formulario">
+                           <textarea name="message" rows="10" cols="30" placeholder="Mensagem"></textarea>
+                    </div>
+                    
+                        <input type="submit" id="enviar" value="Enviar">
             </div>
+       
     </section>
-
-
-    
 
     <!-- Fim do Conteúdo -->
     <footer class="fixed-footer">
 
-        <!-- inicio rodapé -->
-        
-        <!-- <div class="footer-content">
-            <div class="footer-section about"></div>
-            <div class="footer-section links"></div>
-            <div class="footer-section Email-form"></div>
-
-        </div> -->
+        <!-- inicio rodape -->
 
         <div class="footer-bottom">
             DixX Clean &copy 2020 | Todos os direitos reservados
         </div>
 
-
-
-
-
-
-       
         <div class="main-content">
             <div class="left box">
                 <h2>Endereço</h2>
                 <div class="content-items">
                     <div class="endereco">
-                        <a href="https://www.google.com/maps/place/R.+Jo%C3%A3o+Aparecido+Fernandes+dos+Santos,+421+-+Parque+Res.+Jundia%C3%AD,+Jundia%C3%AD+-+SP,+13213-118/@-23.1514292,-47.0063688,17z/data=!3m1!4b1!4m8!1m2!2m1!1sRua+Jo%C3%A3o+Aparecido+Fernandes+dos+Santos,+421+Parque+residencial+Jundia%C3%AD+II!3m4!1s0x94cf304662bb0b1d:0x1ab77f701605f016!8m2!3d-23.1514341!4d-47.0041801">Rua João Aparecido Fernandes dos Santos, 421 Parque residencial Jundiaí II 13213-118</a> <br>
+                        <a  class="address" href="https://www.google.com/maps/place/R.+Jo%C3%A3o+Aparecido+Fernandes+dos+Santos,+421+-+Parque+Res.+Jundia%C3%AD,+Jundia%C3%AD+-+SP,+13213-118/@-23.1514292,-47.0063688,17z/data=!3m1!4b1!4m8!1m2!2m1!1sRua+Jo%C3%A3o+Aparecido+Fernandes+dos+Santos,+421+Parque+residencial+Jundia%C3%AD+II!3m4!1s0x94cf304662bb0b1d:0x1ab77f701605f016!8m2!3d-23.1514341!4d-47.0041801">Rua João Aparecido Fernandes dos Santos, 421 Parque residencial Jundiaí II 13213-118</a> <br>
+                        <a  class="button" href="https://www.google.com/maps/place/R.+Jo%C3%A3o+Aparecido+Fernandes+dos+Santos,+421+-+Parque+Res.+Jundia%C3%AD,+Jundia%C3%AD+-+SP,+13213-118/@-23.1514292,-47.0063688,17z/data=!3m1!4b1!4m8!1m2!2m1!1sRua+Jo%C3%A3o+Aparecido+Fernandes+dos+Santos,+421+Parque+residencial+Jundia%C3%AD+II!3m4!1s0x94cf304662bb0b1d:0x1ab77f701605f016!8m2!3d-23.1514341!4d-47.0041801" >Ir para o Mapa</a>
                     </div>
                 </div>
             </div>
@@ -134,21 +159,18 @@
             <div class="right box">
                 <div class="content-items">
                     <ul>
-                        <li> <a href="#"><i class=" fa fa-instagram" aria-hidden="true"></i></a></i></li>
+                        <li> <a href="https://www.instagram.com/dixxclean/"><i class=" fa fa-instagram" aria-hidden="true"></i></a></i></li>
                         <li> <a href="#"><i class=" fa fa-linkedin" aria-hidden="true"></i></a></i></li>
                     </ul>
                 </div>
             </div>
 
-            </div>
+         </div>
 
-        </div>
-      
-            
+          
         <!-- fim do rodapé -->
     </footer>
         
-
    <script src="/_js/menu.js"></script>
 </body>
 </html>

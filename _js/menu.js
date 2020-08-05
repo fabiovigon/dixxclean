@@ -1,29 +1,9 @@
 //Menu Mobile
 $(document).ready(function aClick(){
     $('.menu-toggle').click(function(){
-
-			$('nav').toggleClass('active'); 
-			$('header').addClass('black'); 
-			
-
-			$( "header" ).click(function() {
-				$( "active" )
-				  .bind( "click", aClick )
-				  .addClass( "black" );
-			  });
-			  $( "header" ).click(function() {
-				$( "active" )
-				  .unbind( "click", aClick)
-				  .removeClass( "black" );
-			  });
-		
-			  
+		var click =	$('nav').toggleClass('active'); 	  
     })
 })
-
-
-
-
 
 //Animation Scroll Menu link
 $('nav a').click(function (e) {
@@ -55,13 +35,45 @@ $(window).on("scroll", function() {
 
 	var widthScreen  = $(window).width();
 
-	console.log(widthScreen);
-
-	if(scroll >= 4320){
+	// console.log(widthScreen);
+	//Desktop
+	if(scroll >= 3337){
 		$('footer').css('display','flex').animate({
 
 		},300);
-	}else if(scroll >= 3165 && widthScreen >= 360)
+
+	}
+	else if(scroll >= 4200 && widthScreen == 1024)
+	{
+		$('footer').css('display','flex').animate({
+
+		},300);
+
+	}
+	else if(scroll >= 2590 && widthScreen == 411)
+	{
+		$('footer').css('display','flex').animate({
+
+		},300);
+
+	}
+	else if(scroll >= 2600 && widthScreen == 360)
+	{
+		$('footer').css('display','flex').animate({
+
+		},300);
+
+	}
+	//iphone 6/7/8
+	else if(scroll >= 2500 && widthScreen == 375)
+	{
+		$('footer').css('display','flex').animate({
+
+		},300);
+
+	}
+
+	else if(scroll >= 2300 && widthScreen == 320)
 	{
 		$('footer').css('display','flex').animate({
 
@@ -73,7 +85,7 @@ $(window).on("scroll", function() {
 
 		},300);
 	}
-	// console.log(scroll);		
+	console.log(scroll);		
 		
     
 
@@ -118,5 +130,42 @@ debounce = function(func, wait, immediate) {
 
 	$(document).scroll(debounce(function(){
 		animeScroll();
-	}, 200));
+	}, 100));
 })();
+
+
+
+
+		var limite;
+            function moverFotos(){
+
+                $('#janela').animate({left:"-=200"},1000, function(e){
+
+                    if($('#janela').position().left == limite){
+                        $('#janela').css('left', 0);
+
+                    }
+                })
+            }
+
+
+			$(function(e) {
+                limite = $('#janela img').length * $('#janela img').width() * -1;
+                $('#janela').append('<img>');
+                $('#janela').attr('src','css/imagens/man-talking-on-cellphone.jpg');
+
+                setInterval(moverFotos,2000);
+			});	
+
+
+
+			function sendMail() {
+				var link = "mailto:me@example.com"
+						 + "?cc=myCCaddress@example.com"
+						 + "&subject=" + escape("This is my subject")
+						 + "&body=" + escape(document.getElementById('Nome').value)
+						 + "<br/>" + escape(document.getElementById('SobreNome').value)
+				;
+			
+				window.location.href = link;
+			}
