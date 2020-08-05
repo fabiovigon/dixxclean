@@ -9,4 +9,4 @@ No desenvolvimento do site foi utilizado:
 - FonteAwesome
 - Jquery Ripples (Water Effect)
 
-Link para o site: https://elastic-villani-c39ed4.netlify.app/
+Link para o site: www.dixxclean.com.br
